@@ -190,15 +190,16 @@ class MainsController < ApplicationController
 
     @StandingsEU = @TeamsEU.sort_by(&:last).reverse
     @StandingsNA = @TeamsNA.sort_by(&:last).reverse
-    raise 
+     
+
+
+
+
   end
 
-
-
-
-
-
-
+  def finalseeds
+    
+  end  
 
 
   # GET /mains/1/edit

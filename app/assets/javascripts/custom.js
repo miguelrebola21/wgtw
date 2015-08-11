@@ -62,9 +62,28 @@ $( ":radio" ).removeAttr('checked');
 
 
 
+		if ($('input:radio[name=g1gna]').click(function() 
+             {
+               $('.wg1gna').text($(this).val());
+               $('.g1wna').val($(this).val());
+             }));
 
+		if ($('input:radio[name=g2gna]').click(function() 
+             {
+               $('.wg2gna').text($(this).val());
+               $('.g2wna').val($(this).val());
+             }));
 
+		if ($('input:radio[name=g1geu]').click(function() 
+             {
+               $('.wg1geu').text($(this).val());
+               $('.g1weu').val($(this).val());
+             }));
 
-
+		if ($('input:radio[name=g2geu]').click(function() 
+             {
+               $('.wg2geu').text($(this).val());
+               $('.g2weu').val($(this).val());
+             }));
 
  });

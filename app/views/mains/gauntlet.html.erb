@@ -5,29 +5,58 @@
 </div>
 <div class="col-sm-12 content" >
 
-
+<form action="/finalseeds" method="post">
 <div class="col-sm-6 region">
 <p class="title">NA Gauntlet according to your Predictions</p>
 <hr>
 
 <div class="col-sm-4 bracket">
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Game 1
+<table class="field">
+<tr><td><%=@StandingsNA[4][0]%></td><td><input type="radio" name="g1gna" value="<%=@StandingsNA[4][0]%>" required></td></tr>
+<tr><td><%=@StandingsNA[5][0]%></td><td><input type="radio" name="g1gna" value="<%=@StandingsNA[5][0]%>" required></td></tr>
+</table>
 
 
 
 </div>
-<div class="col-sm-4 bracket">
-
-</div>
 
 
 <div class="col-sm-4 bracket">
-
-
+<br>
+<br>
 <br>
 <br>
 
+Game 2
+<table class="field">
+<tr><td><%=@StandingsNA[3][0]%></td><td><input type="radio" name="g2gna" value="<%=@StandingsNA[3][0]%>" required></td></tr>
+<tr><td class="wg1gna">Winner of Game 1</td><td><input class="g1wna" type="radio" name="g2gna" value="" required></td></tr>
+</table>
+
 </div>
+
+FINALS
+<div class="col-sm-4 bracket">
+<table class="field">
+<tr><td><%=@StandingsNA[2][0]%></td><td><input type="radio" name="fgna" value="<%=@StandingsNA[2][0]%>" required></td></tr>
+<tr><td class="wg2gna">Winner of Game 2</td><td><input type="radio" class="g2wna" name="fgna" value="" required></td></tr>
+</table>
+
+</div>
+
+
+
+
 
 </div>
 
@@ -37,23 +66,46 @@
 <p class="title">EU Gauntlet according to your Predictions</p>
 <hr>
 <div class="col-sm-4 bracket">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Game 1
+<table class="field">
+<tr><td><%=@StandingsEU[4][0]%></td><td><input type="radio" name="g1geu" value="<%=@StandingsEU[4][0]%>" required></td></tr>
+<tr><td><%=@StandingsEU[5][0]%></td><td><input type="radio" name="g1geu" value="<%=@StandingsEU[5][0]%>" required></td></tr>
+</table>
 
 
 
 </div>
-<div class="col-sm-4 bracket">
-
-</div>
 
 
 <div class="col-sm-4 bracket">
-
-
+<br>
+<br>
 <br>
 <br>
 
+Game 2
+<table class="field">
+<tr><td><%=@StandingsEU[3][0]%></td><td><input type="radio" name="g2geu" value="<%=@StandingsEU[3][0]%>" required></td></tr>
+<tr><td class="wg1geu">Winner of Game 1</td><td><input type="radio" class="g1weu" name="g2geu" value="" required></td></tr>
+</table>
+
 </div>
 
+FINALS	
+<div class="col-sm-4 bracket">
+<table class="field">
+<tr><td><%=@StandingsEU[2][0]%></td><td><input type="radio" name="fgeu" value="<%=@StandingsEU[2][0]%>" required></td></tr>
+<tr><td class="wg2geu">Winner of Game 2</td><td><input type="radio" class="g2weu" name="fgeu" value="" required></td></tr>
+</table>
 
 </div>
 
@@ -62,5 +114,11 @@
 </div>
 <div class="col-sm-12 send">
 <input type="submit" class="btn btn-default" value="Finish">
+<input type="hidden" class="standings" name="aqeu" value="<%=@StandingsEU[0][0]%>" required>
+<input type="hidden" class="standings" name="aqna" value="<%=@StandingsNA[0][0]%>" required>
+<input type="hidden" class="standings" name="sseu" value="<%=@StandingsEU[1][0]%>" required>
+<input type="hidden" class="standings" name="ssna" value="<%=@StandingsNA[1][0]%>" required>
+<input type="hidden" class="standings" name="sseup" value="<%=@StandingsEU[1][1]%>" required>
+<input type="hidden" class="standings" name="ssnap" value="<%=@StandingsNA[1][1]%>" required>
 </form>
 </div>
