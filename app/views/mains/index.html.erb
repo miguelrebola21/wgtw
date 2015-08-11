@@ -1,0 +1,156 @@
+
+
+<div class= "header">
+<h1>WHO GOES TO LEAGUE OF LEGENDS WORLD CHAMPIONSHIP 2015?</h1>
+</div>
+<div class="col-sm-12 content" >
+
+<form action="/gauntlet" method="post">
+<div class="col-sm-6 region">
+<p class="title">NA Playoffs</p>
+<hr>
+
+<div class="col-sm-4 bracket">
+
+<table class="field">
+<tr><td>Gravity</td><td>1</td></tr>
+<tr><td><b>Team Solomid</b></td><td>3</td></tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table class="field">
+<tr><td><b>Team Impulse</b></td><td>3</td></tr>
+<tr><td>Team Dignitas</td><td>0</td></tr>
+</table>
+
+
+</div>
+<div class="col-sm-4 bracket">
+<table class="field">
+<br>
+Game 3
+<tr><td>Team Solomid</td><td><input type="radio" name="g3na" value="Team Solomid" required></td></tr>
+<tr><td>Team Liquid</td><td><input type="radio" name="g3na" value="Team Liquid" required></td></tr>
+</table>
+<br>
+<br>
+Game 4
+<table class="field">
+<tr><td>CLG</td><td><input type="radio" name="g4na" value="CLG" required></td></tr>
+<tr><td>Team Impulse</td><td><input type="radio" name="g4na" value="Team Impulse" required></td></tr>
+</table>
+</div>
+
+
+<div class="col-sm-4 bracket">
+
+<table class="field">
+<br>
+<br>
+<br>
+FINALS
+<tr><td class="wg3na">Winner of Game 3</td><td><input class="fna3" type="radio" name="fna" value="male" required></td></tr>
+<tr><td class="wg4na">Winner of Game 4</td><td><input class="fna4" type="radio" name="fna" value="male" required></td></tr>
+</table>
+<br>
+<br>
+<table class="field">
+3RD PLACE MATCH
+<tr><td class="lg3na">Loser of Game 3</td><td><input class="tna3" type="radio" name="tna" value="male" required></td></tr>
+<tr><td class="lg4na">Loser of Game 4</td><td><input class="tna4" type="radio" name="tna" value="male" required></td></tr>
+</table>
+</div>
+
+</div>
+
+
+
+<div class="col-sm-6 region">
+<p class="title">EU Playoffs</p>
+<hr>
+<div class="col-sm-4 bracket">
+<table class="field">
+<tr><td>Roccat</td><td>2</td></tr>
+<tr><td><b>UOL</b></td><td>3</td></tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table class="field">
+<tr><td><b>H2K</b></td><td>3</td></tr>
+<tr><td>GIANTS</td><td>0</td></tr>
+</table>
+
+
+</div>
+<div class="col-sm-4 bracket">
+<table class="field">
+<br>
+Game 3
+<tr><td>UOL</td><td><input type="radio" name="g3eu" value="UOL" required></td></tr>
+<tr><td>Fnatic</td><td><input type="radio" name="g3eu" value="Fnatic" required></td></tr>
+</table>
+<br>
+<br>
+Game 4
+<table class="field">
+<tr><td>H2K</td><td><input type="radio" name="g4eu" value="H2K" required></td></tr>
+<tr><td>ORIGEN</td><td><input type="radio" name="g4eu" value="ORIGEN" required></td></tr>
+</table>
+</div>
+
+
+<div class="col-sm-4 bracket">
+
+<table class="field">
+<br>
+<br>
+<br>
+FINALS
+<tr><td class="wg3eu">Winner of Game 3</td><td><input class="feu3" type="radio" name="feu" value="male" required></td></tr>
+<tr><td class="wg4eu">Winner of Game 4</td><td><input class="feu4" type="radio" name="feu" value="male" required></td></tr>
+</table>
+<br>
+<br>
+<table class="field">
+3RD PLACE MATCH
+<tr><td class="lg3eu">Loser of Game 3</td><td><input class="teu3" type="radio" name="teu" value="male" required ></td></tr>
+<tr><td class="lg4eu">Loser of Game 4</td><td><input class="teu4" type="radio" name="teu" value="male" required></td></tr>
+</table>
+</div>
+
+
+</div>
+
+
+
+</div>
+<div class="col-sm-12 send">
+<input type="hidden" class="fourtheu" name="fourtheu" value="" required>
+<input type="hidden" class="fourthna" name="fourthna" value="" required>
+<input type="submit" class="btn btn-default" value="Continue"onclick="return fill();">
+</form>
+</div>
+
+<script>
+function fill() {
+        
+      if ($('.lg3na').text() === $('form input:radio[name=tna]:checked') .val()) {
+      	$('.fourthna').val($('.lg4na').text());
+      }else{
+      	$('.fourthna').val($('.lg3na').text());
+      }
+      if ($('.lg3eu').text() === $('form input:radio[name=teu]:checked') .val()) {
+      	$('.fourtheu').val($('.lg4eu').text());
+      }else{
+      	$('.fourtheu').val($('.lg3eu').text());
+      }
+  }
+</script>

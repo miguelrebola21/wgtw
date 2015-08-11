@@ -1,0 +1,53 @@
+// Place all the styles related to the mains controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+background: url("http://uthmag.com/wp-content/uploads/2014/09/league-of-legfaker-of-skt-t1-atlol-world-championship-at-the-staples-center-lol-world-championshipends-world-championships.jpg") no-repeat top center fixed;
+}
+
+.header {
+	width:100%;
+	text-align:center;
+
+	h1{
+		color: white;
+		font-size: 30px;
+		line-height:100%;
+	}	
+}
+
+.content{
+	margin-top:3%;
+}
+
+.region{
+
+	border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    background-color:white;
+}
+.title{
+color: black;
+		font-size: 20px;
+		line-height:100%;
+}
+table, th, td {
+	 border: 1px solid gray; 
+	 padding:5px;
+}
+.send{
+
+	border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+    background-color:white;
+    width:80%;
+    margin-left:10%;
+    text-align:center;
+}
+
+.bracket{
+	min-height:300px;
+}
