@@ -25,7 +25,6 @@ class MainsController < ApplicationController
     @fnatic=90;
     @uol=70;
     @h2k=50;
-    @sk=30;
     @gmb=10;
     @cw=10;
     @gia=20;
@@ -153,21 +152,10 @@ class MainsController < ApplicationController
     @TeamsEU[1]=['UOL',@uol]
     @TeamsEU[2]=['H2K',@h2k]
     @TeamsEU[3]=['ORIGEN',@origen]
-    @TeamsEU[4]=['SK',@sk]
-    @TeamsEU[5]=['GIANTS',@gia]
-    @TeamsEU[6]=['ROCCAT',@roccat]
-    @TeamsEU[7]=['GAMBIT',@gmb]
-    @TeamsEU[8]=['CW',@cw]
+    @TeamsEU[4]=['GIANTS',@gia]
+    @TeamsEU[5]=['ROCCAT',@roccat]
 
-    @PointsEU[0]=@fnatic
-    @PointsEU[1]=@uol
-    @PointsEU[2]=@h2k
-    @PointsEU[3]=@origen
-    @PointsEU[4]=@sk
-    @PointsEU[5]=@gia
-    @PointsEU[6]=@roccat
-    @PointsEU[7]=@gmb
-    @PointsEU[8]=@cw
+
 
     @TeamsNA[0]=['Team Solomid',@tsm]
     @TeamsNA[1]=['C9',@c9]
@@ -177,14 +165,6 @@ class MainsController < ApplicationController
     @TeamsNA[5]=['Gravity',@gav]
     @TeamsNA[6]=['Dignitas',@dig]
 
-
-    @PointsNA[0]=@tsm
-    @PointsNA[1]=@c9
-    @PointsNA[2]=@clg
-    @PointsNA[3]=@tl
-    @PointsNA[4]=@tip
-    @PointsNA[5]=@gav
-    @PointsNA[6]=@dig
 
     @StandingsEU = @TeamsEU.sort_by(&:last).reverse
     @StandingsNA = @TeamsNA.sort_by(&:last).reverse
