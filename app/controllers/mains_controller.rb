@@ -22,9 +22,6 @@ class MainsController < ApplicationController
     @fourthna=params['fourthna']
     @fourtheu=params['fourtheu']
 
-    @oneseedna=@fna;
-    @oneseedeu=@feu;
-
     @fnatic=90;
     @uol=70;
     @h2k=50;
@@ -65,6 +62,7 @@ class MainsController < ApplicationController
     when 'Team Impulse'
       @tip=@tip+10000;
     end
+
 
     case @feu
    when 'Fnatic'
@@ -174,7 +172,7 @@ class MainsController < ApplicationController
     @TeamsNA[0]=['Team Solomid',@tsm]
     @TeamsNA[1]=['C9',@c9]
     @TeamsNA[2]=['CLG',@clg]
-    @TeamsNA[3]=['Team Liquid',@clg]
+    @TeamsNA[3]=['Team Liquid',@tl]
     @TeamsNA[4]=['Team Impulse',@tip]
     @TeamsNA[5]=['Gravity',@gav]
     @TeamsNA[6]=['Dignitas',@dig]
@@ -195,10 +193,11 @@ class MainsController < ApplicationController
 
 
 
+raise
   end
 
   def finalseeds
-    
+
   end  
 
 
