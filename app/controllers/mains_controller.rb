@@ -173,7 +173,7 @@ class MainsController < ApplicationController
 
 
 
-raise
+
   end
 
   def finalseeds
